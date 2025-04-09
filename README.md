@@ -49,7 +49,7 @@ Welcome to the official docs for [**CodeRabbit**](https://coderabbit.ai), the co
    cd coderabbit-docs
    ```
 
-2. Install dependencies:
+2. Install Node.js dependencies using `pnpm`:
 
    ```sh
    pnpm install
