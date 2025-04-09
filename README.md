@@ -39,8 +39,8 @@ Welcome to the official docs for [**CodeRabbit**](https://coderabbit.ai), the co
 
 1. Make sure that you have the following prerequisites installed:
 
-	- [Node.js](https://nodejs.org/)
-	- [pnpm](https://pnpm.io/installation)
+   - [Node.js](https://nodejs.org/)
+   - [pnpm](https://pnpm.io/installation)
 
 1. Clone this repository:
 
@@ -49,13 +49,13 @@ Welcome to the official docs for [**CodeRabbit**](https://coderabbit.ai), the co
    cd coderabbit-docs
    ```
 
-2. Install Node.js dependencies using `pnpm`:
+1. Install Node.js dependencies using `pnpm`:
 
    ```sh
    pnpm install
    ```
 
-3. Start the development server:
+1. Start the development server:
 
    ```sh
    pnpm start
