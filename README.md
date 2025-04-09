@@ -37,6 +37,11 @@ Welcome to the official docs for [**CodeRabbit**](https://coderabbit.ai), the co
 
 ## Getting Started
 
+1. Make sure that you have the following prerequisites installed:
+
+	- [Node.js](https://nodejs.org/)
+	- [pnpm](https://pnpm.io/installation)
+
 1. Clone this repository:
 
    ```sh
