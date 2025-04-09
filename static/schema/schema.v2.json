@@ -813,19 +813,6 @@
 									"additionalProperties": false,
 									"default": {},
 									"description": "OXC is a JavaScript/TypeScript linter written in Rust."
-								},
-								"shopifyThemeCheck": {
-									"type": "object",
-									"properties": {
-										"enabled": {
-											"type": "boolean",
-											"default": true,
-											"description": "Enable Shopify Theme Check | A linter for Shopify themes that helps you follow Shopify theme & Liquid best practices | cli 3.77.1 | theme 3.58.2"
-										}
-									},
-									"additionalProperties": false,
-									"default": {},
-									"description": "Configuration for Shopify Theme Check to ensure theme quality and best practices"
 								}
 							},
 							"additionalProperties": false,
