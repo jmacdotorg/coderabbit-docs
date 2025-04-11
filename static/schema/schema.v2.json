@@ -266,7 +266,7 @@
 									},
 									"instructions": {
 										"type": "string",
-										"maxLength": 3000,
+										"maxLength": 20000,
 										"description": "Provides specific additional guidelines for code review based on file paths."
 									}
 								},
