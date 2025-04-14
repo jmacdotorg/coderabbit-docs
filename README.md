@@ -4,6 +4,12 @@
   </a>
 </p>
 
+# This is a test!
+
+I'm adding a section to this README.md file just to take CodeRabbit itself for a test drive. I wonder what it will say in its code review! I don't intend to actually merge this.
+
+Sorry for being a bit meta, CodeRabbit!
+
 # CodeRabbit Documentation
 
 Welcome to the official docs for [**CodeRabbit**](https://coderabbit.ai), the code review dev tool that helps you ship quality code faster.
