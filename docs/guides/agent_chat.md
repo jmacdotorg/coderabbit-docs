@@ -29,17 +29,19 @@ Upon being invoked, CodeRabbit processes your request and responds with the nece
 
 CodeRabbit Chat can automatically generate scripts in various programming languages (mainly shell scripting) to answer questions about your codebase. If incorrect or non-running or non-germane shell scripts are created, CodeRabbit goes and tries again, and the whole script iteration process will be displayed to you in an Analysis Flow.
 
+All scripts are run in a secure sandboxed execution environment.
+
 ### Web Search
 
 CodeRabbit Chat integrates real-time web search capabilities, enabling it to fetch up-to-date information to support its responses. The CodeRabbit Chat response will indicate this if it decides to search the web to answer your query.
 
 Set `enabled` to false within `web_search` within `knowledge_base` within the config in order to turn this off.
 
-### Code Definition Integration
+### Code Graph Analysis Integration
 
-CodeRabbit Chat is capable of taking definitions of code symbols from the symbol graph that CodeRabbit generates from your codebase. The CodeRabbit Chat response will indicate in its responses if it has found relevant symbols and snippets surrounding symbols in your codebase.
+CodeRabbit Chat is capable of analyzing definitions of code symbols from the symbol graph it generates from your codebase. CodeRabbit can use these code definitions to enhance context when providing a chat response and review comments. CodeRabbit Chat will indicate in its response if it has found relevant symbols and snippets surrounding those symbols in your codebase.
 
-Set the environment variable `ENABLE_CODE_GRAPH` in self-hosted CodeRabbit instances to turn this feature off.
+Set the environment variable `ENABLE_CODE_GRAPH` to false in self-hosted CodeRabbit instances to turn this feature off in self-hosted instances.
 
 ### Jira and Linear Integration
 
@@ -65,7 +67,7 @@ Agent chat can be invoked explicitly with the `@coderabbitai plan` command.
 
 CodeRabbit cannot perform further modifications to opened pull requests. From there, it's your turn to checkout the branch and improve it to satisfaction. We believe that this workflow provides a significant headstart to implementing code.
 
-Agentic Chat is currently only available on Github issue, pull request and pull request review comments. Agentic Chat is an early access product currently.
+Agentic Chat is currently only available on Github issue, pull request and pull request review comments.
 
 ### Help and Feedback
 

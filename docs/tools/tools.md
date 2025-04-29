@@ -13,6 +13,8 @@ import ProPlanNotice from '@site/src/components/ProPlanNotice.mdx';
 
 CodeRabbit supports various linters and security analysis tools to improve the code review process. The output of these tools is used to enhance the feedback provided by CodeRabbit, making it possible to provide 1-click fixes for common issues.
 
+All tool runs are done in a secure sandboxed execution environment.
+
 ## Enabling/Disabling Tools
 
 You can enable or disable tools by setting `reviews.tools.<tool>.enabled` in your project's `.coderabbit.yaml` file or setting the "Review → Tools → Tool → Enabled" field in CodeRabbit's settings page.
@@ -70,6 +72,7 @@ Remove extraneous f prefix
 | Ruby                        | [RuboCop][RuboCop]                                         | Code Quality                                        |
 | Semgrep                     | [Semgrep][Semgrep]                                         | Code Security                                       |
 | Shell (sh, bash, ksh, dash) | [ShellCheck][ShellCheck]                                   | Code Quality                                        |
+| Shopify                     | [Shopify CLI][ShopifyCLI]                                  | Code Quality                                        |
 | SQL                         | [SQLFluff][SQLFluff]                                       | Code Quality                                        |
 | Swift                       | [SwiftLint][SwiftLint]                                     | Code Quality                                        |
 | Terraform                   | [Checkov][Checkov]                                         | Code Security                                       |
@@ -103,3 +106,4 @@ Remove extraneous f prefix
 [Pipeline]: ./pipeline-remediation.md
 [PrismaLint]: ./prisma-lint.md
 [OXC]: ./oxc.md
+[ShopifyCLI]: ./shopify-cli.md
