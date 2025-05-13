@@ -31,10 +31,10 @@ CodeRabbit works with all programming languages, with varying proficiency based 
 
 <Tabs>
   <TabItem value="storage" label="Code Storage" default>
-    - No persistent code storage
-    - Temporary cloning during review only
     - Complete data isolation
-    - Immediate disposal post-review
+    - Caching of encrypted code and dependency archives for faster reviews
+    - Code indexing in which we store vector representations of code for efficient code base context
+    - Both caching and code indexing can be disabled which means we store nothing post-review
   </TabItem>
   <TabItem value="training" label="Training Data">
     - Uses only public datasets
@@ -92,7 +92,7 @@ Email field and click Update to save your changes.
 ### Usage and Configuration
 
 - **Language Settings**: Configure review language in repository settings
-- **Review Rules**: Customize via [Review Instructions](/guides/review-instructions)
+- **Review Rules**: Customize via [review instructions](/guides/review-instructions)
 - **Branch Selection**: Default branch reviews enabled by default (configurable)
 
 ### Access & Permissions
@@ -108,7 +108,7 @@ Interact with CodeRabbit by:
 1. Replying directly to CodeRabbit comments
 2. Tagging `@coderabbitai` in PR discussions
 3. Adding review comments for specific lines
-4. Customize via [Review Instructions](/guides/review-instructions)
+4. Customize via [review instructions](/guides/review-instructions)
 
 :::tip Collaboration Mode
 When team members are active in PRs, use `@coderabbitai` to engage the bot.
