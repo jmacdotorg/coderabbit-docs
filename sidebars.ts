@@ -111,6 +111,18 @@ const sidebars: SidebarsConfig = {
 		{
 			type: "category",
 			collapsed: false,
+			label: "Review local changes",
+			items: [
+				"guides/about-vscode",
+				"guides/install-vscode",
+				"guides/use-vscode",
+				"guides/config-vscode",
+				"guides/uninstall-vscode",
+			],
+		},
+		{
+			type: "category",
+			collapsed: false,
 			label: "Generate reports",
 			items: [
 				"guides/ondemand-reports",
