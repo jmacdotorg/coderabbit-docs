@@ -346,6 +346,19 @@
 									"additionalProperties": false,
 									"default": {},
 									"description": "Docstrings | Options for generating Docstrings for your PRs/MRs."
+								},
+								"unit_tests": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Unit Tests | Allow CodeRabbit to generate unit tests for PRs/MRs."
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "Unit Tests | Options for generating unit tests for your PRs/MRs."
 								}
 							},
 							"additionalProperties": false,
@@ -830,6 +843,19 @@
 									"additionalProperties": false,
 									"default": {},
 									"description": "Configuration for Shopify Theme Check to ensure theme quality and best practices"
+								},
+								"luacheck": {
+									"type": "object",
+									"properties": {
+										"enabled": {
+											"type": "boolean",
+											"default": true,
+											"description": "Enable Lua code linting | Luacheck helps maintain consistent and error-free Lua code | v1.2.0"
+										}
+									},
+									"additionalProperties": false,
+									"default": {},
+									"description": "Configuration for Lua code linting to ensure code quality"
 								}
 							},
 							"additionalProperties": false,
@@ -1120,6 +1146,37 @@
 								"path_instructions": []
 							},
 							"description": "Settings related to the generation of docstrings."
+						},
+						"unit_tests": {
+							"type": "object",
+							"properties": {
+								"path_instructions": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"path": {
+												"type": "string",
+												"description": "File path glob pattern. Example: **/*.js"
+											},
+											"instructions": {
+												"type": "string",
+												"maxLength": 20000,
+												"description": "Provides additional guidelines for unit test generation based on file paths."
+											}
+										},
+										"required": ["path", "instructions"],
+										"additionalProperties": false
+									},
+									"default": [],
+									"description": "Unit Test Generation | Provide additional guidelines for unit test generation based on file paths."
+								}
+							},
+							"additionalProperties": false,
+							"default": {
+								"path_instructions": []
+							},
+							"description": "Settings related to the generation of unit tests."
 						}
 					},
 					"additionalProperties": false,
